@@ -1,0 +1,28 @@
+
+.header-blk {
+    @apply bg-secondary-dark text-secondary-white h-auto min-h-[100px] content-center;
+}
+
+.header-blk .sub-blk {
+    @apply container mx-auto flex justify-between items-center;
+}
+
+.sub-blk div:nth-child(1){
+     @apply w-full max-w-[250px] flex items-center pr-2 ;
+}
+
+.header-blk .nav-blk{
+    @apply text-xl flex;
+}
+
+.header-blk .nav-blk a{
+    @apply mr-8
+}
+
+.header-blk .nav-blk span {
+    @apply mr-2
+}
+
+.header-blk .nav-blk svg {
+    @apply mt-1
+}

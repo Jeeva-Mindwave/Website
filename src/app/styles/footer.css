@@ -1,0 +1,32 @@
+
+.footer-blk {
+    @apply bg-secondary-dark pb-4 text-center text-secondary-white
+}
+
+.footer-blk .pink-border{
+    @apply h-[20px] bg-primary-dark;
+}
+
+.footer-option {
+    @apply p-4 flex justify-center flex-wrap items-center pb-6;
+}
+
+.footer-option span {
+    @apply mr-14 text-[16px]
+}
+
+.logo-section {
+    @apply h-[auto] min-h-[100px] flex justify-center p-5;
+}
+
+.social-blk div:nth-child(1){
+    @apply m-4
+}
+
+.social-blk .icon {
+    @apply flex justify-center 
+}
+
+.social-blk .icon svg{
+    @apply mr-[12px]
+}

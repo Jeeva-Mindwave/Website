@@ -1,12 +1,19 @@
 module.exports = {
-  content: [
-    './src/app/**/*.{js,ts,jsx,tsx}', 
-    './src/components/**/*.{js,ts,jsx,tsx}', // Include components
-    './src/pages/**/*.{js,ts,jsx,tsx}', // For pages folder
-    './src/tina/**/*.{js,ts,jsx,tsx}', // For TinaCMS integration
-  ],
+  content: ['./src/**/*.{html,js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          light: "#924793",
+          dark: "#A239AB",
+        },
+        secondary: {
+          light: "#D6E8FF",
+          white: "#FFFFFF",
+          dark: "#1B203D", 
+        }, 
+      },
+    },
   },
   plugins: [],
 };
