@@ -4,7 +4,7 @@
 }
 
 .header-blk .sub-blk {
-    @apply container mx-auto flex justify-between items-center;
+    @apply ml-5 flex justify-between items-center flex-wrap;
 }
 
 .sub-blk div:nth-child(1){
@@ -12,7 +12,7 @@
 }
 
 .header-blk .nav-blk{
-    @apply text-xl flex;
+    @apply text-xl flex flex-wrap;
 }
 
 .header-blk .nav-blk a{

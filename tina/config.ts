@@ -25,7 +25,6 @@ export default defineConfig({
       publicFolder: 'public',
     },
   },
-  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
@@ -39,6 +38,18 @@ export default defineConfig({
             label: 'Title',
             isTitle: true,
             required: true,
+          },
+          {
+            type: 'string',
+            name: 'body',
+            label: 'Body',
+            isBody: true,
+            required: true,
+          },
+          {
+            type: 'image',
+            label: 'Hero image',
+            name: 'imgSrc',
           },
         ],
       },

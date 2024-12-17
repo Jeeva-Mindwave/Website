@@ -1,9 +1,26 @@
 import client from '../../tina/__generated__/client';
-import HomePage from './homePage';
+import LandingPage from './home/landingPage';
 
 export default async function Home() {
-  const res = await client.queries.page({ relativePath: 'new-subtitle.md' });
+  const paths = [
+    'landingPage/Welcome-to-Hetrzhub.md',
+    'landingPage/Sign-up.md',
+  ];
+
+  const pages = await Promise.all(
+    paths.map((path) => client.queries.page({ relativePath: path }))
+  );
+
   return (
-    <HomePage data={res.data} variables={res.variables} query={res.query} />
+    <div>
+      {pages.map((page, index) => (
+        <LandingPage
+          key={index}
+          data={page.data}
+          variables={page.variables}
+          query={page.query}
+        />
+      ))}
+    </div>
   );
 }
