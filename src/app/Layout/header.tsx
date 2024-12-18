@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import '../styles/header.css'
 import Logo from '../icon/Logo.svg'
-import Hamburger from '../icon/Hamburger_icon.svg'
 import Arrow from '../icon/Down_arrow.svg'
+import HamburgerMenu from '../components/HamburgerMenu';
 
 interface NavLink {
     label: string;
@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         <header className="header-blk">
             <div className="sub-blk">
                 <div>
-                    <div><Hamburger /></div>
+                    <HamburgerMenu />
                     <div><Logo /></div></div>
 
                 {/* Navigation Links */}

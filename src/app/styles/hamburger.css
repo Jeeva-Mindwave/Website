@@ -1,0 +1,4 @@
+
+.hamburger-blk {
+    @apply absolute top-[105px] left-0 max-w-[450px] w-full transition-transform duration-300 h-auto min-h-[560px] bg-secondary-dark text-white z-50 transform rounded-tr-[20px] rounded-br-[20px]
+}

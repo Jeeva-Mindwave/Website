@@ -9,6 +9,7 @@ import Referral from '../icon/Referral_icon.svg';
 import Resource from '../icon/Resource_icon.svg';
 import Treferral from '../icon/Treferral_icon.svg';
 import HelpIcon from '../icon/Help_img.svg'
+import SearchAlphabet from '../components/Search';
 
 const LandingPage = (props: {
   data: PageQuery;
@@ -70,6 +71,7 @@ const LandingPage = (props: {
                 <h1>What would you like help with
                   today? </h1>
                 <p>Search information, self-help resources and services for Hertfordshire’s young people, parents, carers, and professionals to help support children and young people’s emotional wellbeing and mental health.</p>
+                  <SearchAlphabet />
               </div>
             </div>
           </div>

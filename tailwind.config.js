@@ -12,6 +12,9 @@ module.exports = {
           white: "#FFFFFF",
           dark: "#1B203D", 
         }, 
+        terinary: {
+          dark: "#D6E8FF",
+        }
       },
     },
   },

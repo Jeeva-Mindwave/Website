@@ -1,4 +1,3 @@
-
 .welcome-blk {
     @apply h-[530px] bg-secondary-light;
     background-position: center;
@@ -6,15 +5,15 @@
 }
 
 .welcome-msg {
-    @apply relative top-[9rem] bg-secondary-white h-auto min-h-[240px] rounded-tr-[10px] rounded-br-[10px] max-w-[800px] p-10 text-center; 
+    @apply relative top-[9rem] bg-secondary-white h-auto min-h-[240px] rounded-tr-[10px] rounded-br-[10px] max-w-[800px] p-10 text-center;
 }
 
-.welcome-msg h1{
+.welcome-msg h1 {
     @apply text-4xl font-bold;
 }
 
-.welcome-msg p{
-    @apply text-[20px] mt-3; 
+.welcome-msg p {
+    @apply text-[20px] mt-3;
 }
 
 .welcome-msg .sub-text {
@@ -29,24 +28,33 @@
     @apply h-[750px] flex items-center justify-center py-14 px-5;
 }
 
-.signup-blk .sub-blk{
+@media (max-width: 850px) {
+    .signup-blk {
+        @apply flex-wrap;
+    }
+    .signup-blk .sub-blk {
+        @apply !min-h-0
+    }
+}
+
+.signup-blk .sub-blk {
     @apply w-full max-w-[600px] mr-10 h-auto min-h-[390px];
     line-height: 30px
 }
 
 .signup-blk h1 {
-    @apply text-primary-dark text-[40px] font-bold 
+    @apply text-primary-dark text-[40px] font-bold
 }
 
 .signup-blk p {
     @apply mt-5;
 }
 
-.signup-blk .referral{
+.signup-blk .referral {
     @apply flex
 }
 
-.signup-blk .referral p{
+.signup-blk .referral p {
     @apply pl-3 text-primary-dark mt-3;
 }
 
@@ -58,12 +66,12 @@
     @apply w-full max-w-[600px]
 }
 
-.side-blk section{
+.side-blk section {
     @apply mb-4
 }
 
-.help-blk{
-    @apply bg-secondary-dark py-20  pl-24 flex rounded-tl-[300px];
+.help-blk {
+    @apply bg-secondary-dark py-20 pl-24 flex rounded-tl-[300px];
 }
 
 
@@ -71,10 +79,10 @@
     @apply w-full max-w-[600px] mr-3
 }
 
-.help-blk h1{
-     @apply text-[40px] text-secondary-white font-bold;
+.help-blk h1 {
+    @apply text-[40px] text-secondary-white font-bold;
 }
 
-.help-blk p{
+.help-blk p {
     @apply text-[16px] text-secondary-white mt-4 w-full max-w-[700px];
 }
