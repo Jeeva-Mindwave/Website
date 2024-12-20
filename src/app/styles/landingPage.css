@@ -38,10 +38,18 @@
 }
 
 .signup-blk .sub-blk {
-    @apply w-full max-w-[600px] mr-10 h-auto min-h-[390px];
+    @apply w-full max-w-[600px] mr-10 h-auto min-h-[390px] ;
     line-height: 30px
 }
 
+.signup-blk .sub-blk p {
+    @apply pb-5
+}
+
+.signup-blk .sub-blk button {
+    @apply p-5 mr-5 mb-3 w-full max-w-[170px];
+    outline: 1px solid;
+}
 .signup-blk h1 {
     @apply text-primary-dark text-[40px] font-bold
 }
@@ -85,4 +93,8 @@
 
 .help-blk p {
     @apply text-[16px] text-secondary-white mt-4 w-full max-w-[700px];
+}
+
+.help-main-blk {
+    @apply min-h-[750px]
 }

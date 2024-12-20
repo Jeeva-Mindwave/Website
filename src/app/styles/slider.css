@@ -1,0 +1,7 @@
+.slider-blk {
+    @apply bg-secondary-dark text-white py-10 px-5;
+}
+
+.main-blk{
+    @apply w-full max-w-[600px]
+}

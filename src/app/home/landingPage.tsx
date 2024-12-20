@@ -10,6 +10,8 @@ import Resource from '../icon/Resource_icon.svg';
 import Treferral from '../icon/Treferral_icon.svg';
 import HelpIcon from '../icon/Help_img.svg'
 import SearchAlphabet from '../components/Search';
+import { Button } from '@/components/ui/button';
+import CustomSlider from '../components/CustomSlider';
 
 const LandingPage = (props: {
   data: PageQuery;
@@ -34,8 +36,12 @@ const LandingPage = (props: {
       <section>
         <div className='signup-blk'>
           <div className='sub-blk'>
-            <h1>Sign up to HertsHub</h1>
-            <p>It’s quick and easy for young people, parents, carers and professionals to create a CYPMHS HertsHub account. Once registered you can select resources and information specifically for your particular needs, make a referral and track progress of a referral.</p>
+            <h1>{data?.page?.signup}</h1>
+            <p>{data?.page?.signupContent}</p>
+            <div className='btn-blk'>
+            <Button variant={'default'}>Create an account</Button>
+            <Button variant={'secondary'}>Watch demo</Button>
+            </div>
           </div>
           <div className='side-blk'>
             <section>
@@ -48,14 +54,14 @@ const LandingPage = (props: {
             <section>
               <div className='referral'>
                 <div><Resource /></div>
-                <p>Make a referral</p>
+                <p>Access resources</p>
               </div>
-              <div className='sub-text'><p>You can self-refer on the portal and manage it online. Even if you don’t have account on HertsHub, you can make a referral.</p></div>
+              <div className='sub-text'><p>You can self-refer on the portal and manage it online. Even If you don’t have account on HertsHub, you can make a referral. </p></div>
             </section>
             <section>
               <div className='referral'>
                 <div><Treferral /></div>
-                <p>Make a referral</p>
+                <p>Track a referral</p>
               </div>
               <div className='sub-text'><p>You can self-refer on the portal and manage it online. Even if you don’t have account on HertsHub, you can make a referral.</p></div>
             </section>
@@ -63,7 +69,7 @@ const LandingPage = (props: {
         </div>
       </section>
       <section>
-        <div>
+        <div className='help-main-blk'>
           <div>
             <div className='help-blk'>
               <div><HelpIcon /></div>
@@ -76,6 +82,9 @@ const LandingPage = (props: {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <CustomSlider sliderData={data?.page}/>
       </section>
     </div>
   );

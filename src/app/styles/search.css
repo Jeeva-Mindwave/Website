@@ -1,0 +1,20 @@
+
+.search-bar-blk {
+    @apply w-full !max-w-[660px] flex mb-6;
+}
+
+.search-bar-blk button {
+    @apply bg-primary-dark text-white px-4 rounded-r-md
+}
+
+.search-bar-blk input {
+    @apply border rounded-md p-3 bg-secondary-dark text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full
+}
+
+.letter-blk {
+    @apply block bg-terinary-dark p-4 rounded-lg max-w-[660px] w-full
+}
+
+.letter-blk button {
+    @apply bg-white border border-gray-950 m-1 font-semibold rounded-md text-gray-700 w-10 h-10 hover:bg-secondary-dark hover:text-white
+}
